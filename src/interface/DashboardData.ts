@@ -918,3 +918,36 @@ export interface PointClaimBannerPromotionAttributes {
     give_eligible: GiveEligible
     destination: string
 }
+
+export interface DailySetItem {
+    date: string,
+    description: string,
+    destination: string,
+    hash: string,
+    imageUrl: string,
+    isCompleted: boolean,
+    isLocked: string,
+    isUnlocked: string,
+    unlockCriteria: string,
+    offerId: string,
+    points: number,
+    title: string,
+}
+
+export interface ActivityCard {
+    destination: string, 
+    imageUrl: string,
+    isCompleted: boolean,
+    isPromotional: boolean,
+    isLocked: string | boolean,
+    isUnlocked: string, 
+    unlockCriteria: string,
+    name: string,
+    points: number,
+    title: string,
+    description: string, 
+    legalText: string,
+    legalCtaText: string,
+    offerId: string,
+    hash: string
+}

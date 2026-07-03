@@ -153,7 +153,7 @@ export class MobileAccessLogin {
                 )
                 return ''
             }
-
+            this.bot.logger.debug(this.bot.isMobile, 'LOGIN-APP', `Received access token: ${token}`)
             this.bot.logger.info(this.bot.isMobile, 'LOGIN-APP', 'Mobile access token received')
             return token
         } catch (error) {
